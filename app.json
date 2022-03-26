@@ -4,7 +4,7 @@
     "slug": "Kapalzy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/mobile-ticket.svg",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

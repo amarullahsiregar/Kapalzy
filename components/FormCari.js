@@ -1,6 +1,5 @@
 import React , { useState }   from "react";
 import { Pressable, StyleSheet, Text, View,  Modal, Alert, } from "react-native";
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 import ColumnFA5 from "./ColumnFA5";
 import ColumnMI from "./ColumnMI";

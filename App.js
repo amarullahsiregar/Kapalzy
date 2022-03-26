@@ -11,12 +11,12 @@ import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Beranda from './screens/Beranda';
 import Pesanan from './screens/Pesanan';
 import Pembatalan from './screens/Pembatalan';
-// import Lainnya from './screens/Lainnya';
+import Lainnya from './screens/Lainnya';
 
 const Tab = createBottomTabNavigator();
 const ActionsStack = createStackNavigator();
 
-const Lainnya = () => <View style={{flex: 1, backgroundColor:'blue'}}></View>;
+// const Lainnya = () => <View style={{flex: 1, backgroundColor:'blue'}}></View>;
 
 export default function App() {
   
@@ -52,12 +52,12 @@ export default function App() {
         <Tab.Screen name="Pesanan" component={Pesanan}  options={opsiPesanan}/>
         <Tab.Screen name="Pembatalan" component={Pembatalan}  options={opsiPembatalan} />
         <Tab.Screen name="Lainnya" component={Lainnya} options={opsiLainnya} 
-          listeners={({navigation}) => ({
-           tabPress: event => { 
-             event.preventDefault();
-             navigation.navigate("Menu");
-          }
-        })}
+        //   listeners={({navigation}) => ({
+        //    tabPress: event => { 
+        //      event.preventDefault();
+        //      navigation.navigate("Menu");
+        //   }
+        // })}
         />
         
       </Tab.Navigator>

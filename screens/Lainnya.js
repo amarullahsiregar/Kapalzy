@@ -23,7 +23,7 @@ const Lainnya = () => {
             >
             <View style={styles.modalCard}>
                 <View style={styles.modalView}>
-                <Text style={{color:'blue'}}>Route Name : {props.name}</Text>
+                <Text style={{color:'blue'}}>Route Name :</Text>
                     <Pressable
                     style={[styles.button, styles.buttonClose]}
                     onPress={() => setModalVisible(!modalVisible)}
