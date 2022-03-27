@@ -1,20 +1,16 @@
 import React,  { useState }  from 'react';
 import {Alert, SafeAreaView, Pressable, Text, View, StyleSheet, StatusBar, useColorScheme, Modal } from 'react-native';
 
-const Lainnya = () => {
+const Lainnya = ({navigation}) => {
     
   const [modalVisible, setModalVisible] = useState(true);
   
     return (
         
         <SafeAreaView>
-        <View>
-        <StatusBar />
-        </View>
-        <View>
         <Modal
             animationType="fade"
-            transparent={true}
+            transparent={false}
             visible={modalVisible}
             onRequestClose={() => {
             Alert.alert("Modal has been closed.");
@@ -33,7 +29,6 @@ const Lainnya = () => {
                 </View>
             </View>
         </Modal>
-        </View>
         </SafeAreaView>
     );
 };

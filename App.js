@@ -52,12 +52,12 @@ export default function App() {
         <Tab.Screen name="Pesanan" component={Pesanan}  options={opsiPesanan}/>
         <Tab.Screen name="Pembatalan" component={Pembatalan}  options={opsiPembatalan} />
         <Tab.Screen name="Lainnya" component={Lainnya} options={opsiLainnya} 
-        //   listeners={({navigation}) => ({
-        //    tabPress: event => { 
-        //      event.preventDefault();
-        //      navigation.navigate("Menu");
-        //   }
-        // })}
+          listeners={({navigation}) => ({
+           tabPress: event => { 
+             event.preventDefault();
+             navigation.navigate('Pesanan');
+          }
+        })}
         />
         
       </Tab.Navigator>
@@ -65,7 +65,7 @@ export default function App() {
   );
 };
 
-const Menu = () => <View style={{flex: 1, backgroundColor:'red'}}></View>;
+const Menu = ({navigation}) => <View style={{flex: 1, backgroundColor:'red'}}></View>;
 
 const styles = StyleSheet.create({
   textStyles: {
